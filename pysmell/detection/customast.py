@@ -10,6 +10,8 @@ from ast import *
 
 # Is it Python 3?
 is_python3 = hasattr(sys.version_info, 'major') and (sys.version_info.major == 3)
+if is_python3:
+    long = int
 
 
 class AstEncoder(JSONEncoder):
@@ -631,7 +633,7 @@ def is_alpha(c):
 
 
 if __name__ == '__main__':
-    print parse_file('./tmp/function_test.py',improved = True)
+    print(parse_file('./tmp/function_test.py',improved = True))
 # p('/Users/yinwang/Dropbox/prog/pysonar2/tests/test-unicode/test1.py')
 # p('/Users/yinwang/Code/cpython/Lib/lib2to3/tests/data/bom.py')
 # p('/Users/yinwang/Code/cpython/Lib/test/test_decimal.py')
