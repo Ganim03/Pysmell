@@ -20,7 +20,7 @@ LEC,DNC,NCT = [3,3,3],[3,4,3],[3,2,2]
 
 portion = {}
 
-myportion = open('result100\\portion.txt',mode='wb+')
+myportion = open('result100/portion.txt',mode='w', newline='')
 
 smells = {'LongParameterList':[PAR],'LongMethod':[MLOC],'LongScopeChaining':[DOC],'LongBaseClassList':[NBC],
 'LargeClass':[CLOC],'LongMessageChain':[LMC], 'LongLambdaFunction':[NOC,LPAR,NOO],
@@ -29,42 +29,42 @@ smells = {'LongParameterList':[PAR],'LongMethod':[MLOC],'LongScopeChaining':[DOC
 
 subjects = util.subDirectory(subject_dir)
 
-LongParameterList = csv.writer(file('result100\\LongParameterList.csv','wb'))
+LongParameterList = csv.writer(open('result100/LongParameterList.csv','w', newline=''))
 LongParameterList.writerow(['subject','file','lineno','PAR','experience-based','statistics-based','tuning machine'])
-LongMethod = csv.writer(file('result100\\LongMethod.csv','wb'))
+LongMethod = csv.writer(open('result100/LongMethod.csv','w', newline=''))
 LongMethod.writerow(['subject','file','lineno','MLOC','experience-based','statistics-based','tuning machine'])
-LongScopeChaining = csv.writer(file('result100\\LongScopeChaining.csv','wb'))
+LongScopeChaining = csv.writer(open('result100/LongScopeChaining.csv','w', newline=''))
 LongScopeChaining.writerow(['subject','file','lineno','DOC','experience-based','statistics-based','tuning machine'])
-LongBaseClassList = csv.writer(file('result100\\LongBaseClassList.csv','wb'))
+LongBaseClassList = csv.writer(open('result100/LongBaseClassList.csv','w', newline=''))
 LongBaseClassList.writerow(['subject','file','lineno','NBC','experience-based','statistics-based','tuning machine'])
-LargeClass = csv.writer(file('result100\\LargeClass.csv','wb'))
+LargeClass = csv.writer(open('result100/LargeClass.csv','w', newline=''))
 LargeClass.writerow(['subject','file','lineno','CLOC','experience-based','statistics-based','tuning machine'])
-LongLambdaFunction = csv.writer(file('result100\\LongLambdaFunction.csv','wb'))
+LongLambdaFunction = csv.writer(open('result100/LongLambdaFunction.csv','w', newline=''))
 LongLambdaFunction.writerow(['subject','file','lineno','NOC','PAR','NOO','experience-based','statistics-based','tuning machine'])
-LongTernaryConditionalExpression = csv.writer(file('result100\\LongTernaryConditionalExpression.csv','wb'))
+LongTernaryConditionalExpression = csv.writer(open('result100/LongTernaryConditionalExpression.csv','w', newline=''))
 LongTernaryConditionalExpression.writerow(['subject','file','lineno','NOC','NOL','experience-based','statistics-based','tuning machine'])
-ComplexContainerComprehension = csv.writer(file('result100\\ComplexContainerComprehension.csv','wb'))
+ComplexContainerComprehension = csv.writer(open('result100/ComplexContainerComprehension.csv','w', newline=''))
 ComplexContainerComprehension.writerow(['subject','file','lineno','NOC','NOFF','NOO','experience-based','statistics-based','tuning machine'])
-LongMessageChain = csv.writer(file('result100\\LongMessageChain.csv','wb'))
+LongMessageChain = csv.writer(open('result100/LongMessageChain.csv','w', newline=''))
 LongMessageChain.writerow(['subject','file','lineno','LMC','experience-based','statistics-based','tuning machine'])
-MultiplyNestedContainer = csv.writer(file('result100\\MultiplyNestedContainer.csv','wb'))
+MultiplyNestedContainer = csv.writer(open('result100/MultiplyNestedContainer.csv','w', newline=''))
 MultiplyNestedContainer.writerow(['subject','file','lineno','LEC','DNC','NCT','experience-based','statistics-based','tuning machine'])
 
 for subjectName in subjects:
-	sourcedir = subject_dir + '\\'+ subjectName
+	sourcedir = os.path.join(subject_dir, subjectName)
 	counts = {'LongParameterList':[0,0,0],'LongMethod':[0,0,0],'LongScopeChaining':[0,0,0],
 	'LongBaseClassList':[0,0,0],'LargeClass':[0,0,0],'LongMessageChain':[0,0,0],
 	'LongLambdaFunction':[0,0,0],'LongTernaryConditionalExpression':[0,0,0],
 	'ComplexContainerComprehension':[0,0,0],'MultiplyNestedContainer':[0,0,0]}
-	if not os.path.isdir('result100\\%s' %subjectName):
-		os.mkdir('result100\\%s' %subjectName)
-	mylog = open('result100\\%s\\count.txt' %subjectName,mode='wb+')
+	if not os.path.isdir('result100/%s' %subjectName):
+		os.mkdir('result100/%s' %subjectName)
+	mylog = open('result100/%s/count.txt' %subjectName,mode='w', newline='')
 
 	for currentFileName in util.walkDirectory(sourcedir):
 		try:
 			astContent = customast.parse_file(currentFileName)
 		except:
-			print sourcedir,currentFileName
+			print(sourcedir,currentFileName)
 			continue
 		myast = astChecker.MyAst()
 		myast.fileName = currentFileName
