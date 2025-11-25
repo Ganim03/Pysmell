@@ -1,3 +1,5 @@
 subject,file,lineno,DOC,experience-based,statistics-based,tuning machine
-test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,60,5,1,1,1
-test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,300,6,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,94,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,60,5,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,330,6,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,404,2,0,0,0

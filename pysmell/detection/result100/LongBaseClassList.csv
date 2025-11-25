@@ -1,2 +1,5 @@
 subject,file,lineno,NBC,experience-based,statistics-based,tuning machine
-test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,89,5,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,10,1,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,89,5,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,442,5,1,1,1
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,17,1,0,0,0

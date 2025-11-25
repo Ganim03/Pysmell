@@ -139,7 +139,7 @@ def getMetric(s,baseLine,fileName):
 
 def usedImports(fileName,imports):
     present = set()
-    exclude = string.digits + string.letters + "_"
+    exclude = string.digits + string.ascii_letters + "_"
     inheredoc = False
     heredocendpattern = re.compile(r'.*"""$')
     if len(imports) == 0:
