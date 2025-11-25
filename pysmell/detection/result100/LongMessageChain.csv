@@ -1,1 +1,4 @@
 subject,file,lineno,LMC,experience-based,statistics-based,tuning machine
+test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,254,6,1,1,1
+test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,274,2,0,0,0
+test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,277,2,0,0,0

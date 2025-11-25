@@ -1,2 +1,4 @@
 subject,file,lineno,LEC,DNC,NCT,experience-based,statistics-based,tuning machine
+test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,162,,4,4,1,1,1
+test_smells,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/test_smells/smell_examples.py,181,,6,3,1,1,1
 example repository,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/example repository/the rest to check/random.py,8,1,,,0,0,0

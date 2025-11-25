@@ -32,8 +32,7 @@ class MyAst(ast.NodeVisitor):
         exprLength = len(expr.strip()) - expr.count(' ') - 2
         par = len(node.args.args)
         noo = 0
-        type_filters = [_ast.Load,_ast.Store,_ast.Del,_ast.AugLoad,_ast.AugStore,_ast.Param,
-        _ast.Ellipsis,_ast.ExtSlice,_ast.Index,_ast.And,_ast.Or,
+        type_filters = [_ast.Load,_ast.Store,_ast.Del,_ast.And,_ast.Or,
         _ast.Add,_ast.Sub,_ast.Mult,_ast.Div,_ast.Mod,_ast.Pow,_ast.LShift,
         _ast.RShift,_ast.BitOr,_ast.BitXor,_ast.BitAnd,_ast.FloorDiv,
         _ast.Invert,_ast.Not,_ast.UAdd,_ast.USub,
@@ -162,8 +161,7 @@ class MyAst(ast.NodeVisitor):
             if item.strip() == "if" or item.strip() == "for":
                 count += 1
         noo = -1
-        type_filters = [_ast.Load,_ast.Store,_ast.Del,_ast.AugLoad,_ast.AugStore,_ast.Param,
-        _ast.Ellipsis,_ast.ExtSlice,_ast.Index,_ast.And,_ast.Or,
+        type_filters = [_ast.Load,_ast.Store,_ast.Del,_ast.And,_ast.Or,
         _ast.Add,_ast.Sub,_ast.Mult,_ast.Div,_ast.Mod,_ast.Pow,_ast.LShift,
         _ast.RShift,_ast.BitOr,_ast.BitXor,_ast.BitAnd,_ast.FloorDiv,
         _ast.Invert,_ast.Not,_ast.UAdd,_ast.USub,
