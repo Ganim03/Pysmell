@@ -1,9 +1,6 @@
 subject,file,lineno,LMC,experience-based,statistics-based,tuning machine
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/util.py,19,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/util.py,20,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/run_detection_local.py,24,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/run_detection_local.py,59,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/run_detection_local.py,64,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,33,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,44,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,53,2,0,0,0
@@ -38,15 +35,6 @@ detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,288
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,294,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,315,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,321,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,284,6,1,1,1
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,304,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,307,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,600,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,602,6,1,1,1
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,666,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,669,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,672,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/smell_examples.py,681,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,12,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,29,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,388,2,0,0,0
@@ -57,8 +45,12 @@ detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,401,
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,402,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,450,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/customast.py,451,2,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,54,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,10,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,11,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,12,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,33,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,59,2,0,0,0
+detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,64,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/parameter.py,4,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/parameter.py,4,2,0,0,0
 detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/parameter.py,4,2,0,0,0

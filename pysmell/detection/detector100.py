@@ -4,7 +4,17 @@ import os
 import util
 import astChecker
 import customast
-from parameter import subject_dir
+import sys
+
+if len(sys.argv) > 1:
+    target_path = os.path.abspath(sys.argv[1])
+    subject_dir = os.path.dirname(target_path)
+    subjects = [os.path.basename(target_path)]
+    print(f"Analyzing specified directory: {target_path}")
+else:
+    from parameter import subject_dir
+    subjects = util.subDirectory(subject_dir)
+    print(f"Analyzing default directories in: {subject_dir}")
 
 
 PAR = [5,4,5]
@@ -20,15 +30,10 @@ LEC,DNC,NCT = [3,3,3],[3,4,3],[3,2,2]
 
 portion = {}
 
+if not os.path.exists('result100'):
+    os.makedirs('result100')
+
 myportion = open('result100/portion.txt',mode='w', newline='')
-
-smells = {'LongParameterList':[PAR],'LongMethod':[MLOC],'LongScopeChaining':[DOC],'LongBaseClassList':[NBC],
-'LargeClass':[CLOC],'LongMessageChain':[LMC], 'LongLambdaFunction':[NOC,LPAR,NOO],
-'LongTernaryConditionalExpression':[TNOC,TNOL], 'ComplexContainerComprehension':[CNOC,NOFF,CNOO],
-'MultiplyNestedContainer':[LEC,DNC,NCT] }
-
-subjects = util.subDirectory(subject_dir)
-
 LongParameterList = csv.writer(open('result100/LongParameterList.csv','w', newline=''))
 LongParameterList.writerow(['subject','file','lineno','PAR','experience-based','statistics-based','tuning machine'])
 LongMethod = csv.writer(open('result100/LongMethod.csv','w', newline=''))
