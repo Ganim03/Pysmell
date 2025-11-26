@@ -1,9 +1,10 @@
 subject,file,lineno,NOC,NOL,experience-based,statistics-based,tuning machine
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/compare_metric_distribution_across_projects.py,34,27,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,226,41,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,221,35,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,222,35,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,223,35,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,225,35,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,226,35,1,0,0,0
-detection,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,227,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/compare_metric_distribution_across_projects.py,34,27,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/astChecker.py,226,41,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/report_generator.py,160,86,1,1,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,221,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,222,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,223,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,225,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,226,35,1,0,0,0
+pysmell,/Users/ganimzawhar/Desktop/Pysmell/pysmell/detection/detector100.py,227,35,1,0,0,0
